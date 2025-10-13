@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.IInterface;
+
+/* compiled from: com.google.android.gms:play-services-ads-lite@@20.1.0 */
+/* loaded from: classes.dex */
+public interface t33 extends IInterface {
+    void c0(q33 q33Var);
+
+    void g(int i2);
+
+    void x(g93 g93Var);
+}

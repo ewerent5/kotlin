@@ -1,0 +1,31 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.IBinder;
+import android.os.Parcel;
+
+/* compiled from: com.google.android.gms:play-services-ads-lite@@20.1.0 */
+/* loaded from: classes.dex */
+public final class hh extends zr2 implements jh {
+    hh(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.ads.internal.mediation.client.rtb.IInterstitialCallback");
+    }
+
+    @Override // com.google.android.gms.internal.ads.jh
+    public final void b(String str) {
+        Parcel parcelZza = zza();
+        parcelZza.writeString("Adapter returned null.");
+        zzbj(3, parcelZza);
+    }
+
+    @Override // com.google.android.gms.internal.ads.jh
+    public final void e(g93 g93Var) {
+        Parcel parcelZza = zza();
+        bs2.d(parcelZza, g93Var);
+        zzbj(4, parcelZza);
+    }
+
+    @Override // com.google.android.gms.internal.ads.jh
+    public final void zze() {
+        zzbj(2, zza());
+    }
+}

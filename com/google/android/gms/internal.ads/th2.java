@@ -1,0 +1,66 @@
+package com.google.android.gms.internal.ads;
+
+import j$.util.Comparator;
+import j$.util.function.Function;
+import j$.util.function.ToDoubleFunction;
+import j$.util.function.ToIntFunction;
+import j$.util.function.ToLongFunction;
+import java.util.Collections;
+import java.util.Comparator;
+
+/* compiled from: com.google.android.gms:play-services-ads@@20.1.0 */
+/* loaded from: classes.dex */
+final class th2 implements Comparator<ci2>, j$.util.Comparator {
+    th2() {
+    }
+
+    @Override // java.util.Comparator, j$.util.Comparator
+    public final /* bridge */ /* synthetic */ int compare(Object obj, Object obj2) {
+        ci2 ci2Var = (ci2) obj;
+        ci2 ci2Var2 = (ci2) obj2;
+        xh2 it = ci2Var.iterator();
+        xh2 it2 = ci2Var2.iterator();
+        while (it.hasNext() && it2.hasNext()) {
+            int iCompare = Integer.compare(it.zza() & 255, it2.zza() & 255);
+            if (iCompare != 0) {
+                return iCompare;
+            }
+        }
+        return Integer.compare(ci2Var.l(), ci2Var2.l());
+    }
+
+    @Override // java.util.Comparator, j$.util.Comparator
+    public /* synthetic */ Comparator reversed() {
+        return Collections.reverseOrder(this);
+    }
+
+    @Override // j$.util.Comparator
+    public /* synthetic */ Comparator thenComparing(Function function) {
+        return Comparator.CC.$default$thenComparing(this, function);
+    }
+
+    @Override // j$.util.Comparator
+    public /* synthetic */ java.util.Comparator thenComparing(Function function, java.util.Comparator comparator) {
+        return Comparator.CC.$default$thenComparing(this, function, comparator);
+    }
+
+    @Override // java.util.Comparator, j$.util.Comparator
+    public /* synthetic */ java.util.Comparator thenComparing(java.util.Comparator comparator) {
+        return Comparator.CC.$default$thenComparing(this, comparator);
+    }
+
+    @Override // j$.util.Comparator
+    public /* synthetic */ java.util.Comparator thenComparingDouble(ToDoubleFunction toDoubleFunction) {
+        return Comparator.CC.$default$thenComparingDouble(this, toDoubleFunction);
+    }
+
+    @Override // j$.util.Comparator
+    public /* synthetic */ java.util.Comparator thenComparingInt(ToIntFunction toIntFunction) {
+        return Comparator.CC.$default$thenComparingInt(this, toIntFunction);
+    }
+
+    @Override // j$.util.Comparator
+    public /* synthetic */ java.util.Comparator thenComparingLong(ToLongFunction toLongFunction) {
+        return Comparator.CC.$default$thenComparingLong(this, toLongFunction);
+    }
+}

@@ -1,0 +1,32 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import e.c.b.b.b.b;
+
+/* compiled from: com.google.android.gms:play-services-ads-lite@@20.1.0 */
+/* loaded from: classes.dex */
+public abstract class a8 extends as2 implements b8 {
+    public a8() {
+        super("com.google.android.gms.ads.internal.formats.client.IOnPublisherAdViewLoadedListener");
+    }
+
+    public static b8 I4(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.ads.internal.formats.client.IOnPublisherAdViewLoadedListener");
+        return iInterfaceQueryLocalInterface instanceof b8 ? (b8) iInterfaceQueryLocalInterface : new z7(iBinder);
+    }
+
+    @Override // com.google.android.gms.internal.ads.as2
+    protected final boolean zzbA(int i2, Parcel parcel, Parcel parcel2, int i3) {
+        if (i2 != 1) {
+            return false;
+        }
+        X1(v.zzac(parcel.readStrongBinder()), b.a.U(parcel.readStrongBinder()));
+        parcel2.writeNoException();
+        return true;
+    }
+}

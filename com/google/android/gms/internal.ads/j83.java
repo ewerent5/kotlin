@@ -1,0 +1,8 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@20.1.0 */
+/* loaded from: classes.dex */
+final class j83 implements hj2<l83> {
+    j83() {
+    }
+}
